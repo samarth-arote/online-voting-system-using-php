@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Aregistration.css">
+</head>
+<style>
+    
+header {
+    background-color: #333333;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffc107; 
+}
+
+</style>
+<body>
+    <header>
+        <div class='logo'></div>
+        <nav>
+            <ul>
+                <li><a href="/samarth/home.html">Go To Home</a></li>
+                <li><a href="Alogin.html">Go To Admin Login</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="Aregister.php" method="post">
+        <h2>Admin Registration Form:</h2>
+        <label for="adminname">Admin Name:</label>
+        <input type="text" id="adminname" name="adminname" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="p_no">Phone Number:</label>
+        <input type="text" id="p_no" name="p_no" required><br>
+
+        <label for="addr">Address:</label>
+        <textarea id="addr" name="addr" rows="4" required></textarea><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
